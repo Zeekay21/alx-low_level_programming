@@ -1,12 +1,15 @@
 #include "lists.h"
-
-/* Print the contents of a linked list*/
-void print_list(listint_t *list, char *array)
+/**
+* Counts the number of nodes in a linked list by iterating through the list and incrementing a counter for each node
+*/
+size_t print_listint(const listint_t *h)
 {
-	/* Loop through the array, printing each value on a new line. */
-	for (int i=0; i < sizeof(array)/sizeof(int); i++
-			{
-		      /* Use sprintf to create a formatted string that will print the values in the array*/
-		sprintf(array, "%d\n",list->data[i]);
-		}
-		}	
+size_t num = 0;
+{
+printf("%d\n", h->n);
+for (size_t num = 0; h; num++)
+h = h->next;
+printf("%d\n", h->n);
+}
+return (num);
+}
