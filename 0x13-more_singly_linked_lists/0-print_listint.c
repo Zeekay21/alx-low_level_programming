@@ -1,15 +1,18 @@
 #include "lists.h"
 /**
-* Counts the number of nodes in a linked list by iterating through the list and incrementing a counter for each node
+* print_listint - prints all the elements of a linked list of intergers
+* @h: A pointer to the head of the linked list (of type listint_t) to print
+*
+* Return: number of nodes in the linked list
 */
 size_t print_listint(const listint_t *h)
 {
 size_t num = 0;
+while (h)
 {
 printf("%d\n", h->n);
-for (size_t num = 0; h; num++)
+num++;
 h = h->next;
-printf("%d\n", h->n);
 }
 return (num);
 }
