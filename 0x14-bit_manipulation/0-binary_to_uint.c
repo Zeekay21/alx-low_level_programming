@@ -2,8 +2,7 @@
 
 /**
  * binary_to_uint - converts a binary string to an unsigned int
- * @b:the binary string to be converted 
- *
+ * @b:the binary string to be converted
  * Return: the converted unsigned int
  */
 unsigned int binary_to_uint(const char *b)
